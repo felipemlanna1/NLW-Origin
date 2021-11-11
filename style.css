@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --grey: hsl(240, 9%, 89%);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 3.2rem;
+}
+
+ul {
+  margin-top: 3rem;
+  padding: 0;
+  /*Deixar uma caixa ao lado da outra*/
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/*Propriedade de tamanho "rem" equivale ao tamano da fonte da pagina fonte-size = 16px então 1rem = 16px*/
+
+/*Position:absolute permeite que o elemento flutue na pagina se refere sempre a pagina como um todo*/
+
+/*Position:relative faz com que o position:absolute que esteja dentro passe a se referir a aquele elemento*/
+
+/*Clip path é utilizado para criar formatos na pagina, usar como referencia o site "https://bennettfeely.com/clippy/" */
+
+/*z-index: define a profundidade do elemento, se relaciona com o eixo Z pensando em um grafico 3D*/
+
+/*object-fit: cover, serve para que o elemento não perca a proporção no caso de uma foto por exemplo*/
+
+/* "--nomeVariavel" criação de variavel em css*/
